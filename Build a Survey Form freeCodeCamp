@@ -1,0 +1,80 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+  </header>
+      <p id="description">We value your feedback! Please fill out this survey form to help us improve</p>
+    <form id="survey-form">
+   <!-- Name Input-->
+      <div>
+      <label id="name-label" for="name">Name:</label>
+      <input id="name" type="text" name="name" required placeholder="Enter your Name">
+      </div>
+    
+  <!-- Email Input -->
+    <div>
+      <label id="email-label" for="email">Email:</label>
+      <input id="email" type="email" name="email" required placeholder="Enter your Email">
+      </div>
+
+<!-- Number Input -->
+    <div>
+      <label id="number-label" for="number">Age:</label>
+      <input id="number" type="number" name="age" min="13" max="120" required placeholder="Age">
+      </div>
+
+  <!-- Dropdown -->
+      <div>
+        <label for="dropdown">What is your favorite programming language?</label>
+        <select id="dropdown" name="language">
+         <option value="javascript">Javascript</option>
+         <option value="python">Python</option>
+         <option value="csharp">C#</option>
+        </select>
+      </div>
+
+      <!-- Radio Buttons -->
+      <fieldset>
+        <legend>Would you recommend freeCodeCamp to a friend?</legend>
+        <label>
+          <input type="radio" name="recommended" value="yes" required>Yes
+        </label>
+        <label>
+          <input type="radio" value="no" name="recommended"> No
+        </label>
+      <fieldset
+
+      <!-- Checkboxes -->
+      <fieldset>
+        <legend>What Features do you like? (select all that apply)</legend>
+        <label>
+          <input type="checkbox" name="features" value="frontend"> Frontend
+        </label>
+        <label>
+          <input type="checkbox" name="features" value="backend"> Backend
+        </label>
+        <label>
+          <input type="checkbox" name="features" value="design"> Design
+        </label>
+      </fieldset>
+
+      <!-- Textarea -->
+      <div>
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea id="comments" name="comments" placeholder="write your comments here..."></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div>
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
